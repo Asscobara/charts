@@ -1,0 +1,109 @@
+{
+  "charts": [{
+    "type": "line",
+    "xXis": ["first", "second", "third", "fourth"],
+    "dataSet": [{
+      "data": [1 , 33, 22, 44],
+      "label": "test1"
+    }, {
+      "data": [10 , 330, 220, 440],
+      "label": "test2"
+    }, {
+      "data": [13 , 133, 222, 344],
+      "label": "test3"
+    }]
+  }, {
+    "type": "pie",
+    "xXis": ["first", "second", "third", "fourth"],
+    "dataSet": [{
+      "data": [1 , 33, 22, 44],
+      "label": "test1"
+    }, {
+      "data": [10 , 330, 220, 440],
+      "label": "test2"
+    }, {
+      "data": [13 , 133, 222, 344],
+      "label": "test3"
+    }] }, {
+        "type": "radar",
+        "xXis": ["first", "second"],
+        "dataSet": [{
+          "data": [1 , 33],
+          "label": "test1"
+        }, {
+          "data": [10 , 330],
+          "label": "test2"
+        }, {
+          "data": [13 , 133],
+          "label": "test3"
+        }]
+    }, {
+    "type": "bar",
+    "xXis": ["first", "second"],
+    "dataSet": [{
+      "data": [12 , 33],
+      "label": "test1"
+    }, {
+      "data": [13 , 330],
+      "label": "test2"
+    }, {
+      "data": [17, 135],
+      "label": "test3"
+    }]
+  }, {
+    "type": "line",
+    "xXis": ["first", "second", "third", "fourth"],
+    "dataSet": [{
+      "data": [1 , 33, 22, 44],
+      "label": "test1"
+    }, {
+      "data": [10 , 330, 220, 440],
+      "label": "test2"
+    }, {
+      "data": [13 , 133, 222, 344],
+      "label": "test3"
+    }]
+  },
+    {
+      "type": "polarArea",
+      "xXis": ["first", "second", "third", "fourth"],
+      "dataSet": [{
+        "data": [1 , 33, 22, 44],
+        "label": "test1"
+      }, {
+        "data": [10 , 330, 220, 440],
+        "label": "test2"
+      }, {
+        "data": [13 , 133, 222, 344],
+        "label": "test3"
+      }]
+    }, {
+      "type": "doughnut",
+      "xXis": ["first", "second", "third", "fourth"],
+      "dataSet": [{
+        "data": [1 , 33, 22, 44],
+        "label": "test1"
+      }, {
+        "data": [10 , 330, 220, 440],
+        "label": "test2"
+      }, {
+        "data": [13 , 133, 222, 344],
+        "label": "test3"
+      }]
+    }, {
+      "type": "bubble",
+      "xXis": ["first", "second", "third", "fourth"],
+      "dataSet": [{
+        "data": [1 , 33, 22, 44],
+        "label": "test1"
+      }, {
+        "data": [10 , 330, 220, 440],
+        "label": "test2"
+      }, {
+        "data": [13 , 133, 222, 344],
+        "label": "test3"
+      }]
+    }]
+}
+
+
