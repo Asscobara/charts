@@ -1,0 +1,15 @@
+
+  <canvas baseChart
+          width="100px"
+          height="100px"
+          [plugins]="chartPlugins"
+          [data]="chartSingleData"
+          [datasets]="chartDataSet"
+          [labels]="chartLabels"
+          [options]="chartOptions"
+          [colors]="chartColors"
+          [legend]="chartLegend"
+          [chartType]="chartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)">
+  </canvas>
