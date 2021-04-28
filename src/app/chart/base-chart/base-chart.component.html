@@ -1,7 +1,6 @@
-
+<div class="canvas-container">
   <canvas baseChart
-          width="100px"
-          height="100px"
+          style="width: 450px; height: 500px;"
           [plugins]="chartPlugins"
           [data]="chartSingleData"
           [datasets]="chartDataSet"
@@ -13,3 +12,4 @@
           (chartHover)="chartHovered($event)"
           (chartClick)="chartClicked($event)">
   </canvas>
+</div>

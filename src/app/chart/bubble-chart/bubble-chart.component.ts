@@ -36,8 +36,8 @@ export class BubbleChartComponent extends BaseChartComponent implements OnInit {
 
   protected parseData(data: any): void {
     this.chartType = CHART_TYPE.BUBBLE;
-    this.chartDataSet = data.dataSet[0].label;
-    this.chartLabels = data.dataSet[0].data;
+   // this.chartDataSet = data.dataSet[0].label;
+   // this.chartLabels = data.dataSet[0].data;
     super.parseData(data);
   }
 
