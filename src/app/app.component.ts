@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'charts';
   public data: any;
   constructor(httpClient: HttpClient) {
-    httpClient.get('data.json' ).subscribe((d: any) => this.data = d.charts);
+    httpClient.get('../assets/data.json' ).subscribe((d: any) => this.data = d.charts);
   }
 }

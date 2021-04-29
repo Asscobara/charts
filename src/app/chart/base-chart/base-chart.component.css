@@ -1,4 +1,6 @@
 .canvas-container {
   border: 1px solid #314211;
   border-radius: 25px;
+  padding: 2px;
+  margin: 10px;
 }

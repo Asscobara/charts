@@ -3,3 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.chart-item {
+  padding: 2px;
+}
