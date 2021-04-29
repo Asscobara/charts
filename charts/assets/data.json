@@ -1,0 +1,96 @@
+{
+  "charts": [{
+    "type": "line",
+    "xXis": ["first", "second", "third", "fourth"],
+    "dataSet": [{
+      "data": [1 , 33, 22, 44],
+      "label": "line1"
+    }, {
+      "data": [10 , 330, 220, 440],
+      "label": "line2"
+    }, {
+      "data": [13 , 133, 222, 344],
+      "label": "line3"
+    }]
+  }, {
+    "type": "pie",
+    "xXis": ["first", "second", "third", "fourth"],
+    "dataSet": [{
+      "data": [1 , 33, 22, 44],
+      "label": "group 1"
+    }, {
+      "data": [10 , 330, 220, 440],
+      "label": "group 2"
+    }, {
+      "data": [13 , 133, 222, 344],
+      "label": "group 3"
+    }] }, {
+        "type": "radar",
+        "xXis": ["time 1", "time 2", "time 3", "time 4", "time 5", "time 6", "time 7"],
+        "dataSet": [{
+          "data": [65, 59, 90, 81, 56, 55, 40],
+          "label": "Series A"
+        }, {
+          "data": [28, 48, 40, 19, 96, 27, 100],
+          "label": "Series B"
+        }, {
+          "data": [13 , 133, 33, 45, 233, 54, 66],
+          "label": "Series C"
+        }]
+    }, {
+    "type": "bar",
+    "xXis": ["first", "second"],
+    "dataSet": [{
+      "data": [12 , 33],
+      "label": "test1"
+    }, {
+      "data": [13 , 330],
+      "label": "test2"
+    }, {
+      "data": [17, 135],
+      "label": "test3"
+    }]
+  }, {
+    "type": "line",
+    "xXis": ["line 1", "line 2", "line 3", "line 4"],
+    "dataSet": [{
+      "data": [1 , 33, 80, 144],
+      "label": "test1"
+    }, {
+      "data": [10 , 330, 220, 440],
+      "label": "test2"
+    }, {
+      "data": [13 , 133, 222, 344],
+      "label": "test3"
+    }]
+  },
+    {
+      "type": "polarArea",
+      "xXis": ["area 1", "area 2", "area 3", "area 4"],
+      "dataSet": [{
+        "data": [1 , 33, 22, 44],
+        "label": "test1"
+      }, {
+        "data": [10 , 330, 220, 440],
+        "label": "test2"
+      }, {
+        "data": [13 , 133, 222, 344],
+        "label": "test3"
+      }]
+    }, {
+      "type": "doughnut",
+      "xXis": ["first", "second", "third", "fourth"],
+      "dataSet": [{
+        "data": [11 , 33, 22, 44],
+        "label": "test1"
+      }, {
+        "data": [101 , 330, 220, 440],
+        "label": "test2"
+      }, {
+        "data": [131 , 133, 222, 344],
+        "label": "test3"
+      }]
+    }]
+}
+
+
