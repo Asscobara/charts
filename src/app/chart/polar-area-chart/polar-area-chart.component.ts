@@ -5,7 +5,7 @@ import {CHART_TYPE} from '../common/declarations';
 @Component({
   selector: 'app-polar-area-chart',
   templateUrl: '../base-chart/base-chart.component.html',
-  styleUrls: ['../base-chart/base-chart.component']
+  styleUrls: ['../base-chart/base-chart.component.css']
 })
 export class PolarAreaChartComponent extends BaseChartComponent implements OnInit {
 

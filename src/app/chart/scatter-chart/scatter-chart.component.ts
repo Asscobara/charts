@@ -5,7 +5,7 @@ import {CHART_TYPE} from '../common/declarations';
 @Component({
   selector: 'app-scatter-chart',
   templateUrl: '../base-chart/base-chart.component.html',
-  styleUrls: ['../base-chart/base-chart.component']
+  styleUrls: ['../base-chart/base-chart.component.css']
 })
 export class ScatterChartComponent extends BaseChartComponent implements OnInit {
 
