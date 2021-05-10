@@ -21,4 +21,5 @@ export class BarChartComponent extends BaseChartComponent implements OnInit {
     super.parseData(data);
   }
 
+  // hagay
 }
