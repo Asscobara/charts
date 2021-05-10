@@ -14,6 +14,7 @@ export class LineChartComponent extends BaseChartComponent implements OnInit {
   }
 
   public ngOnInit(): void {
+    super.ngOnInit();
   }
 
   protected parseData(data: any): void {
