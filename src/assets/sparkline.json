@@ -1,0 +1,14 @@
+{
+  "sparkLines": {
+    "columns": ["test", "chart", "uploads", "used"],
+    "sparkLines": [{
+      "chartId": 17,
+      "chartColumnIndex": 1,
+      "data": [1, 1, 20, 30]
+    }, {
+      "chartId": 18,
+      "chartColumnIndex": 1,
+      "data": [2, 1, 55, 99]
+    }]
+  }
+}

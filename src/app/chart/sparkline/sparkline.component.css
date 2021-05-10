@@ -1,0 +1,8 @@
+.sparkline-container {
+  display: flex;
+}
+
+.sparkline-item {
+  padding: 2px;
+  text-align-last: center;
+}

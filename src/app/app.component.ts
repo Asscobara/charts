@@ -9,7 +9,10 @@ import {HttpClient} from '@angular/common/http';
 export class AppComponent {
   title = 'charts';
   public data: any;
+  public sparkLineData: any;
+
   constructor(httpClient: HttpClient) {
-    httpClient.get('../charts/assets/data.json' ).subscribe((d: any) => this.data = d.charts);
+    httpClient.get('./assets/data.json' ).subscribe((d: any) => this.data = d.charts);
+    httpClient.get('./assets/sparkline.json' ).subscribe((d: any) => this.sparkLineData = d.sparkLines);
   }
 }

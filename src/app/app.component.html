@@ -1,6 +1,11 @@
-<span>This is POC</span>
+<span>This is POC Version 1.5</span>
 <div>
   <app-charts [data]="data"></app-charts>
+  <span>Sparklines</span>
+  <app-sparklines
+    [data]="data"
+    [sparklineData]="sparkLineData">
+  </app-sparklines>
 </div>
 
 

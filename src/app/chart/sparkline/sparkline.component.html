@@ -1,0 +1,26 @@
+<div class="sparkline-container">
+  <div
+    class="sparkline-item"
+    *ngFor="let item of data; let i = index"
+    [ngStyle]="{width: width, height: height}">
+    <span *ngIf="i !== chartIndex">{{ item }}</span>
+    <div *ngIf="i === chartIndex">
+      <app-line-chart
+        *ngIf="chartType === CHART_TYPE.LINE"
+        [chartOptions]="chartOptions"
+        [hasBorder]="false"
+        [width]="width"
+        [height]="height"
+        [data]="chartData">
+      </app-line-chart>
+      <app-bar-chart
+        *ngIf="chartType === CHART_TYPE.BAR"
+        [chartOptions]="chartOptions"
+        [hasBorder]="false"
+        [width]="width"
+        [height]="height"
+        [data]="chartData">
+      </app-bar-chart>
+    </div>
+  </div>
+</div>

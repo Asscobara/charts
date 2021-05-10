@@ -1,0 +1,19 @@
+<div class="titles-container">
+  <div class="title" *ngFor="let title of sparklineData?.columns">
+    {{ title }}
+  </div>
+</div>
+
+<div class="lines-container">
+  <div *ngFor="let line of sparklineData?.sparkLines">
+    <app-spark-line
+      [data]="line.data"
+      [width]="'100px'"
+      [height]="'50px'"
+      [chartType]="getChartType(line.chartId)"
+      [chartData]="getChartData(line.chartId)"
+      [chartIndex]="line.chartColumnIndex">
+    </app-spark-line>
+  </div>
+</div>
+

@@ -1,6 +1,6 @@
-<div class="canvas-container">
+<div [ngClass]="{'canvas-container': hasBorder}">
   <canvas baseChart
-          style="width: 450px; height: 500px;"
+          [ngStyle]="{ width: width, height: height}"
           [plugins]="chartPlugins"
           [data]="chartSingleData"
           [datasets]="chartDataSet"

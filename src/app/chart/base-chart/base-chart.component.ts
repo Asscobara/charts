@@ -12,12 +12,16 @@ import {CHART_TYPE} from '../common/declarations';
 export class BaseChartComponent implements OnInit, OnChanges {
 
   @Input() public data: any;
+  @Input() public width = '450px';
+  @Input() public height = '500px';
+  @Input() public hasBorder = true;
+
   public chartType: ChartType = CHART_TYPE.LINE;
   public chartDataSet: ChartDataSets[];
   public chartSingleData: SingleDataSet;
   public chartLabels: Label[];
 
-  public chartOptions: (ChartOptions & { annotation: any }) = {
+  @Input() public chartOptions: (ChartOptions & { annotation: any }) = {
     responsive: true,
     scales: {
       // We use this empty structure as a placeholder for dynamic theming.
