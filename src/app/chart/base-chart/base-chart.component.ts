@@ -3,6 +3,7 @@ import {ChartDataSets, ChartOptions, ChartType} from 'chart.js';
 import {BaseChartDirective, Color, Label, SingleDataSet} from 'ng2-charts';
 import * as pluginAnnotations from 'chart.js';
 import {CHART_TYPE} from '../common/declarations';
+import * as Chart from 'chart.js';
 
 @Component({
   selector: 'app-base-chart',
@@ -92,6 +93,7 @@ export class BaseChartComponent implements OnInit, OnChanges {
   public chartLegend = true;
 
   public chartPlugins = [pluginAnnotations];
+  public drag = false;
 
   @ViewChild(BaseChartDirective, { static: true }) chart: BaseChartDirective;
 
@@ -100,10 +102,66 @@ export class BaseChartComponent implements OnInit, OnChanges {
   }
 
   public ngOnInit(): void {
-   // console.log('ngOnInit');
+
+    const canvas = document.getElementById('chartJSContainer');
+    const ctx = (canvas as any).getContext('2d');
+    const chart = new Chart(ctx, {options: this.chartOptions});
+    const overlay = document.getElementById('overlay');
+    let startIndex = 0;
+    overlay.style.width = canvas.style.width;
+    overlay.style.height = canvas.style.height;
+    const selectionContext = (overlay as any).getContext('2d');
+    const selectionRect = {
+      w: 0,
+      startX: 0,
+      startY: 0
+    };
+    canvas.addEventListener('pointerdown', evt => {
+      const points = (chart as any).getElementsAtEventForMode(evt, 'index', {
+        intersect: false
+      });
+      startIndex = points[0]._index;
+      const rect = canvas.getBoundingClientRect();
+      selectionRect.startX = evt.clientX - rect.left;
+      selectionRect.startY = chart.chartArea.top;
+      this.drag = true;
+      // save points[0]._index for filtering
+    });
+    canvas.addEventListener('pointermove', evt => {
+
+      let rect = canvas.getBoundingClientRect();
+      if (this.drag) {
+        rect = canvas.getBoundingClientRect();
+        selectionRect.w = (evt.clientX - rect.left) - selectionRect.startX;
+        selectionContext.globalAlpha = 0.5;
+        selectionContext.clearRect(0, 0, canvas.style.width, canvas.style.height);
+        selectionContext.fillRect(selectionRect.startX,
+          selectionRect.startY,
+          selectionRect.w,
+          chart.chartArea.bottom - chart.chartArea.top);
+      } else {
+        selectionContext.clearRect(0, 0, canvas.style.width, canvas.style.height);
+        const x = evt.clientX - rect.left;
+        if (x > chart.chartArea.left) {
+          selectionContext.fillRect(x,
+            chart.chartArea.top,
+            1,
+            chart.chartArea.bottom - chart.chartArea.top);
+        }
+      }
+    });
+    canvas.addEventListener('pointerup', evt => {
+
+      const points = (chart as any).getElementsAtEventForMode(evt, 'index', {
+        intersect: false
+      });
+      this.drag = false;
+      console.log('selected', points);
+      // emit console.log('implement filter between ' + options.data.labels[startIndex] + ' and ' + options.data.labels[points[0]._index]);
+    });
   }
 
-  public ngOnChanges(changes: SimpleChanges) {
+  public ngOnChanges(changes: SimpleChanges): void {
 
     if (changes.data) {
       this.parseData(this.data);

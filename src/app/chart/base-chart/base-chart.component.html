@@ -1,5 +1,11 @@
 <div [ngClass]="{'canvas-container': hasBorder}">
+  <canvas id="overlay"
+          width="width"
+          height="height"
+          style="position:absolute;pointer-events:none;">
+  </canvas>
   <canvas baseChart
+          id="chartJSContainer"
           [ngStyle]="{ width: width, height: height}"
           [plugins]="chartPlugins"
           [data]="chartSingleData"
