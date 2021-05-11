@@ -2,15 +2,15 @@
   "charts": [{
     "type": "line",
     "id": 10,
-    "xXis": ["first", "second", "third", "fourth"],
+    "xXis": ["first", "second", "third", "fourth", "fifth", "sixth", "seventh"],
     "dataSet": [{
-      "data": [1 , 33, 22, 44],
+      "data": [1 , 33, 22, 44, 5, 43, 20],
       "label": "line1"
     }, {
-      "data": [10 , 330, 220, 440],
+      "data": [10 , 330, 220, 440, 44, 32, 100],
       "label": "line2"
     }, {
-      "data": [13 , 133, 222, 344],
+      "data": [13 , 133, 222, 344, 6, 32, 12, 90],
       "label": "line3"
     }]
   }, {

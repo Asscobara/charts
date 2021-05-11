@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {BaseChartComponent} from '../base-chart/base-chart.component';
 import {CHART_TYPE} from '../common/declarations';
 

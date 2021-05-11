@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 import {BaseChartComponent} from '../base-chart/base-chart.component';
 import {CHART_TYPE} from '../common/declarations';
 
@@ -7,13 +7,10 @@ import {CHART_TYPE} from '../common/declarations';
   templateUrl: '../base-chart/base-chart.component.html',
   styleUrls: ['../base-chart/base-chart.component.css']
 })
-export class PolarAreaChartComponent extends BaseChartComponent implements OnInit {
+export class PolarAreaChartComponent extends BaseChartComponent {
 
   constructor() {
     super();
-  }
-
-  public ngOnInit(): void {
   }
 
   protected parseData(data: any): void {

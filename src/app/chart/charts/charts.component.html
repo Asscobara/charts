@@ -4,7 +4,8 @@
     <app-line-chart
       class="chart-item"
       *ngIf="chart.type === CHART_TYPE.LINE"
-      [data]="chart">
+      [data]="chart"
+      (onZoom)="onZoom.emit($event)">
     </app-line-chart>
     <app-bubble-chart
       class="chart-item"

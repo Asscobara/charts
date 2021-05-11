@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {CHART_TYPE} from '../common/declarations';
 
 @Component({
@@ -9,6 +9,7 @@ import {CHART_TYPE} from '../common/declarations';
 export class ChartsComponent implements OnInit {
 
   @Input() public data = [];
+  @Output() public onZoom: EventEmitter<any> = new EventEmitter();
 
   public CHART_TYPE = CHART_TYPE;
 

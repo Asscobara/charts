@@ -1,4 +1,4 @@
-import {Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild} from '@angular/core';
+import {Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, ViewChild} from '@angular/core';
 import {ChartDataSets, ChartOptions, ChartType} from 'chart.js';
 import {BaseChartDirective, Color, Label, SingleDataSet} from 'ng2-charts';
 import * as pluginAnnotations from 'chart.js';
@@ -16,6 +16,8 @@ export class BaseChartComponent implements OnInit, OnChanges {
   @Input() public width = '450px';
   @Input() public height = '500px';
   @Input() public hasBorder = true;
+
+  @Output() public onZoom: EventEmitter<any> = new EventEmitter();
 
   public chartType: ChartType = CHART_TYPE.LINE;
   public chartDataSet: ChartDataSets[];
@@ -102,8 +104,12 @@ export class BaseChartComponent implements OnInit, OnChanges {
 
   }
 
+
   public ngOnInit(): void {
 
+  }
+
+  private setCanvasAndOverlay(): void {
     const canvas = this.chartJSContainer.nativeElement;
     const ctx = canvas.getContext('2d');
 
@@ -176,14 +182,18 @@ export class BaseChartComponent implements OnInit, OnChanges {
       this.drag = false;
       console.log('selected', points);
       console.log('implement filter between ' + this.chartLabels[startIndex] + ' and ' + this.chartLabels[points[0]._index]);
+      this.onZoom.emit({
+        fromX: startIndex,
+        toX: points[0]._index,
+        chartId: this.data.id
+      });
     });
   }
-
   public ngOnChanges(changes: SimpleChanges): void {
-
     if (changes.data) {
       this.parseData(this.data);
     }
+    this.setCanvasAndOverlay();
   }
 
   protected parseData(data: any): void {
