@@ -17,9 +17,14 @@ export class AppComponent {
   }
 
   public handleZoom($event): void {
-    this.httpClient.get('./assets/data.json' ).subscribe((d: any) => {
-      this.data = this.calculateDataUponZoom(d.charts, $event);
-    });
+
+     this.httpClient.get('./assets/data.json' ).subscribe((d: any) => {
+      const tempData = this.calculateDataUponZoom(d.charts, $event);
+      const dataIndex = this.data.findIndex(c => c.id === $event.chartId);
+      const tempDataIndex = tempData.findIndex(c => c.id === $event.chartId);
+
+      this.data.splice(dataIndex, 1, tempData[tempDataIndex]);
+     });
   }
 
   private calculateDataUponZoom(charts, zoomInfo): any {

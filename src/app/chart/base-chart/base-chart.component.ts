@@ -100,7 +100,7 @@ export class BaseChartComponent implements OnInit, OnChanges {
   @ViewChild('overlay', { static: true }) public overlay: ElementRef;
   @ViewChild('chartJSContainer', { static: true }) public chartJSContainer: ElementRef;
 
-  protected supportZoom = false;
+  @Input() public supportZoom = false;
 
   public constructor() {
 
