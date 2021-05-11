@@ -11,6 +11,7 @@ export class LineChartComponent extends BaseChartComponent {
 
   constructor() {
     super();
+    this.supportZoom = true;
   }
 
   protected parseData(data: any): void {

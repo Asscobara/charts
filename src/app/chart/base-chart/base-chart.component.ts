@@ -100,16 +100,20 @@ export class BaseChartComponent implements OnInit, OnChanges {
   @ViewChild('overlay', { static: true }) public overlay: ElementRef;
   @ViewChild('chartJSContainer', { static: true }) public chartJSContainer: ElementRef;
 
+  protected supportZoom = false;
+
   public constructor() {
 
   }
-
 
   public ngOnInit(): void {
 
   }
 
   private setCanvasAndOverlay(): void {
+    if (!this.supportZoom) {
+      return;
+    }
     const canvas = this.chartJSContainer.nativeElement;
     const ctx = canvas.getContext('2d');
 
