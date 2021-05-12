@@ -16,6 +16,7 @@ export class BaseChartComponent implements OnInit, OnChanges {
   @Input() public width = '450px';
   @Input() public height = '500px';
   @Input() public hasBorder = true;
+  @Input() public hasToolTips = true;
 
   @Output() public onZoom: EventEmitter<any> = new EventEmitter();
 

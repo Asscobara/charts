@@ -1,14 +1,16 @@
 <span class="span-title">This is POC Version 1.7</span>
-<div>
+<div class="content-container">
   <app-charts
     [data]="data"
     (onZoom)="handleZoom($event)">
   </app-charts>
-  <span class="span-title">Sparklines</span>
-  <app-sparklines
-    [data]="data"
-    [sparklineData]="sparkLineData">
-  </app-sparklines>
+  <div>
+      <span class="span-title">Sparklines</span>
+      <app-sparklines
+        [data]="data"
+        [sparklineData]="sparkLineData">
+      </app-sparklines>
+   </div>
 </div>
 
 
