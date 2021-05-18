@@ -18,10 +18,15 @@
         *ngIf="chart.type === CHART_TYPE.DOUGHNUT"
         [data]="chart" >
       </app-doughnut-chart>
+      <app-hor-bar-chart
+        class="chart-item"
+        *ngIf="chart.type === CHART_TYPE.HOR_BAR"
+        [data]="chart">
+      </app-hor-bar-chart>
       <app-bar-chart
         class="chart-item"
         *ngIf="chart.type === CHART_TYPE.BAR"
-        [data]="chart" >
+        [data]="chart">
       </app-bar-chart>
       <app-pie-chart
         class="chart-item"

@@ -15,6 +15,7 @@ import {LineChartComponent} from './line-chart/line-chart.component';
 import {ChartsModule} from 'ng2-charts';
 import {SparklineComponent} from './sparkline/sparkline.component';
 import { SparklinesComponent } from './sparklines/sparklines.component';
+import {HorBarChartComponent} from './hor-bar-chart/hor-bar-chart.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SparklinesComponent } from './sparklines/sparklines.component';
     LineChartComponent,
     ChartsComponent,
     SparklineComponent,
-    SparklinesComponent
+    SparklinesComponent,
+    HorBarChartComponent
   ],
   imports: [
     BrowserModule,

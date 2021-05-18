@@ -12,6 +12,8 @@ export class LineChartComponent extends BaseChartComponent {
   constructor() {
     super();
     this.supportZoom = true;
+    this.chartOptions.scales.xAxes[0].gridLines.display = true;
+    this.chartOptions.scales.yAxes[0].gridLines.display = true;
   }
 
   protected parseData(data: any): void {

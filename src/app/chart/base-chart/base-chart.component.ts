@@ -2,7 +2,7 @@ import {Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, S
 import {ChartDataSets, ChartOptions, ChartType} from 'chart.js';
 import {BaseChartDirective, Color, Label, SingleDataSet} from 'ng2-charts';
 import * as pluginAnnotations from 'chart.js';
-import {CHART_TYPE} from '../common/declarations';
+import {CHART_TYPE, DEFAULT_COLORS} from '../common/declarations';
 import * as Chart from 'chart.js';
 
 @Component({
@@ -27,22 +27,23 @@ export class BaseChartComponent implements OnInit, OnChanges {
 
   @Input() public chartOptions: (ChartOptions & { annotation: any }) = {
     responsive: true,
+    legend: {
+      position: 'bottom',
+      labels: {
+        fontSize: 11,
+        usePointStyle: true
+      }
+    },
     scales: {
       // We use this empty structure as a placeholder for dynamic theming.
-      xAxes: [{}],
-      yAxes: [
-        {
-          id: 'y-axis-0',
-          position: 'left',
-        },
-        {
-          id: 'y-axis-1',
-          position: 'right',
+      xAxes: [{
+        gridLines: {
+          display: false,
+        }
+      }],
+      yAxes: [{
           gridLines: {
-            color: 'rgba(255,0,0,0.3)',
-          },
-          ticks: {
-            fontColor: 'red',
+            display: false
           }
         }
       ]
@@ -66,35 +67,8 @@ export class BaseChartComponent implements OnInit, OnChanges {
     },
   };
 
-  public chartColors: Color[] = [
-    { // grey
-      backgroundColor: 'rgba(148,159,177,0.2)',
-      borderColor: 'rgba(148,159,177,1)',
-      pointBackgroundColor: 'rgba(148,159,177,1)',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(148,159,177,0.8)'
-    },
-    { // dark grey
-      backgroundColor: 'rgba(77,83,96,0.2)',
-      borderColor: 'rgba(77,83,96,1)',
-      pointBackgroundColor: 'rgba(77,83,96,1)',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(77,83,96,1)'
-    },
-    { // red
-      backgroundColor: 'rgba(255,0,0,0.3)',
-      borderColor: 'red',
-      pointBackgroundColor: 'rgba(148,159,177,1)',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(148,159,177,0.8)'
-    }
-  ];
-
+  public chartColors: Color[];
   public chartLegend = true;
-
   public chartPlugins = [pluginAnnotations];
   public drag = false;
 
@@ -104,11 +78,27 @@ export class BaseChartComponent implements OnInit, OnChanges {
   @Input() public supportZoom = false;
 
   public constructor() {
-
+    this.createDefaultColors();
   }
 
   public ngOnInit(): void {
 
+  }
+
+  private createDefaultColors(): void {
+
+    this.chartColors = [];
+
+    DEFAULT_COLORS.forEach(color => {
+      this.chartColors.push({
+        backgroundColor: color,
+        borderColor: color,
+        pointBackgroundColor: color,
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: color
+      });
+    });
   }
 
   private setCanvasAndOverlay(): void {
