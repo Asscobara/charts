@@ -1,18 +1,63 @@
 {
+
+
   "charts": [{
+    "type": "horizontalBar",
+    "display": true,
+    "id": 9,
+    "xXis": ["first", "second", "third", "fourth", "fifth", "sixth", "seventh"],
+    "dataSet": [{
+      "data": [1 , 33, 22, 44, 5, 43, 220],
+      "label": "test data set",
+      "radius": 50,
+      "rotation": 0,
+      "showLine": true,
+      "spanGaps": true,
+      "weight": 300,
+      "fill": true,
+      "barPercentage": 1,
+      "borderDash": [1, 2, 3, 42, 5]
+    }, {
+      "data": [12 , 323, 222, 424, 25, 423, 220],
+      "label": "test data set2",
+      "radius": 50,
+      "rotation": 0,
+      "showLine": true,
+      "spanGaps": false,
+      "weight": 300,
+      "fill": true,
+      "barPercentage": 1,
+      "borderDash": [1, 2, 3, 42, 5]
+    }]
+   },{
     "type": "line",
     "display": true,
     "id": 10,
     "xXis": ["first", "second", "third", "fourth", "fifth", "sixth", "seventh"],
     "dataSet": [{
+      "fill": false,
       "data": [1 , 33, 22, 44, 5, 43, 20],
       "label": "line1"
     }, {
+      "fill": false,
       "data": [10 , 330, 220, 440, 44, 32, 100],
       "label": "line2"
     }, {
+      "fill": false,
       "data": [13 , 133, 222, 344, 6, 32, 12, 90],
       "label": "line3"
+    }, {
+      "fill": false,
+      "data": [130 , 1, 2, 44, 16, 232, 312, 190],
+      "label": "line4"
+    }, {
+      "fill": false,
+      "data": [65 , 64, 63, 64, 65, 66, 67, 68],
+      "label": "line5"
+    }, {
+      "fill": false,
+      "data": [100 , 200, 150, 300, 50, 120, 52, 666],
+      "label": "line6"
     }]
   }, {
     "type": "pie",

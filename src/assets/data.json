@@ -7,15 +7,26 @@
     "id": 9,
     "xXis": ["first", "second", "third", "fourth", "fifth", "sixth", "seventh"],
     "dataSet": [{
-      "data": [1 , 33, 22, 44, 5, 43, 20],
+      "data": [1 , 33, 22, 44, 5, 43, 220],
       "label": "test data set",
       "radius": 50,
-      "rotation": 100,
-      "showLine": false,
+      "rotation": 0,
+      "showLine": true,
+      "spanGaps": true,
+      "weight": 300,
+      "fill": true,
+      "barPercentage": 1,
+      "borderDash": [1, 2, 3, 42, 5]
+    }, {
+      "data": [12 , 323, 222, 424, 25, 423, 220],
+      "label": "test data set2",
+      "radius": 50,
+      "rotation": 0,
+      "showLine": true,
       "spanGaps": false,
       "weight": 300,
       "fill": true,
-      "barPercentage": 5,
+      "barPercentage": 1,
       "borderDash": [1, 2, 3, 42, 5]
     }]
    },{

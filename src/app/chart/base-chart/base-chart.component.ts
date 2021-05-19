@@ -28,6 +28,8 @@ export class BaseChartComponent implements OnInit, OnChanges {
   @Input() public chartOptions: (ChartOptions & { annotation: any }) = {
     responsive: true,
     legend: {
+      onHover: (event: MouseEvent, legendItem: Chart.ChartLegendLabelItem) => this.handleOnHoverLegend(event, legendItem),
+      onLeave: (event: MouseEvent, legendItem: Chart.ChartLegendLabelItem) => this.handleOnLeaveLegend(event, legendItem),
       position: 'bottom',
       labels: {
         fontSize: 11,
@@ -74,8 +76,11 @@ export class BaseChartComponent implements OnInit, OnChanges {
 
   @ViewChild('overlay', { static: true }) public overlay: ElementRef;
   @ViewChild('chartJSContainer', { static: true }) public chartJSContainer: ElementRef;
+  @ViewChild('tooltip', { static: true }) public tooltip: ElementRef;
 
   @Input() public supportZoom = false;
+
+  private hoveringLegend = false;
 
   public constructor() {
     this.createDefaultColors();
@@ -184,6 +189,22 @@ export class BaseChartComponent implements OnInit, OnChanges {
       });
     });
   }
+
+  private handleOnHoverLegend(event: MouseEvent, legendItem: Chart.ChartLegendLabelItem): void {
+    if (this.hoveringLegend) {
+      return;
+    }
+    this.hoveringLegend = true;
+    this.tooltip.nativeElement.innerHTML = legendItem.text;
+    this.tooltip.nativeElement.style.left = event.pageX + 'px';
+    this.tooltip.nativeElement.style.top = event.pageY + 'px';
+  }
+
+  private handleOnLeaveLegend(event: MouseEvent, legendItem: Chart.ChartLegendLabelItem): void {
+    this.hoveringLegend = false;
+    this.tooltip.nativeElement.innerHTML = '';
+  }
+
   public ngOnChanges(changes: SimpleChanges): void {
     if (changes.data) {
       this.parseData(this.data);

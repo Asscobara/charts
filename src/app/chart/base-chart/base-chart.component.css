@@ -9,3 +9,10 @@
   position:absolute;
   pointer-events:none;
 }
+
+.legend-tooltip {
+  color: #575757;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 3px 0 rgb(0 0 0);
+  position: absolute;
+}
