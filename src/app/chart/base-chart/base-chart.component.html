@@ -14,12 +14,19 @@
           [options]="chartOptions"
           [colors]="chartColors"
           [legend]="chartLegend"
-          [chartType]="chartType"
           (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)">
+          (mouseleave)="hovering = false"
+          [chartType]="chartType">
   </canvas>
 </div>
-<div
-  class="legend-tooltip"
-  #tooltip>
+
+<div *ngIf="hovering == true" class="legend-tooltip" [ngStyle]="{left: tooltipInfo.x, top: tooltipInfo.y}">
+  <div *ngFor="let bar of tooltipInfo.bars">
+    <div class="tool-tip-title">{{bar.title}}</div>
+    <div class="tool-tip-info">
+      <span class="tooltip-info-color" [ngStyle]="{background: bar.color}"></span>
+      <span class="tooltip-info-value">{{bar.value}}</span>
+      <span class="tooltip-info-text">{{bar.text}}</span>
+    </div>
+  </div>
 </div>

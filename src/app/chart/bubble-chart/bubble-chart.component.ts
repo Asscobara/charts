@@ -29,8 +29,7 @@ export class BubbleChartComponent extends BaseChartComponent implements OnInit {
             max: 30,
           }
         }]
-      },
-      annotation: {}
+      }
     };
   }
 

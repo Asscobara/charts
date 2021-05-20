@@ -11,8 +11,43 @@
 }
 
 .legend-tooltip {
-  color: #575757;
+  color: #757575;
   background-color: #FFFFFF;
   box-shadow: 0 2px 3px 0 rgb(0 0 0);
   position: absolute;
+  padding: 2px 13px;
+  border-radius: 5px;
 }
+
+.legend-tooltip:before {
+  position: absolute;
+  top: 15px;
+  left: -5px;
+  border-left: solid 1px #b9acac;
+  border-top: solid 1px #ccc;
+  width: 0.5em;
+  height: 0.5em;
+  transform: rotate(312deg);
+  background: inherit;
+  content: '';
+}
+
+
+.tooltip-info-color {
+  font-weight: bold;
+  width: 10px;
+  height: 10px;
+  background-size: unset;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.tooltip-info-text {
+  margin-left: 2px;
+}
+
+.tooltip-info-value {
+  font-weight: bold;
+  margin-left: 2px;
+}
+
