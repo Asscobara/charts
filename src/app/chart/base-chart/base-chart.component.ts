@@ -1,6 +1,6 @@
 import {Component, ElementRef, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, ViewChild} from '@angular/core';
-import {ChartDataSets, ChartOptions, ChartType} from 'chart.js';
-import {BaseChartDirective, Color, Label, SingleDataSet} from 'ng2-charts';
+import {ChartDataSets, ChartOptions, ChartType, PositionType} from 'chart.js';
+import {Color, Label, SingleDataSet} from 'ng2-charts';
 import * as pluginAnnotations from 'chart.js';
 import {CHART_TYPE, DEFAULT_COLORS} from '../common/declarations';
 import * as Chart from 'chart.js';
@@ -16,6 +16,7 @@ export class BaseChartComponent implements OnInit, OnChanges {
   @Input() public width = '450px';
   @Input() public height = '500px';
   @Input() public hasBorder = true;
+  @Input() public legendPosition: PositionType = 'bottom';
   @Input() public hasToolTips = true;
 
   @Output() public onZoom: EventEmitter<any> = new EventEmitter();
@@ -34,6 +35,7 @@ export class BaseChartComponent implements OnInit, OnChanges {
       position: 'bottom',
       labels: {
         fontSize: 11,
+        fontFamily: 'Lato-Regular',
         usePointStyle: true
       }
     },
@@ -54,7 +56,7 @@ export class BaseChartComponent implements OnInit, OnChanges {
 
   public chartColors: Color[];
   public chartLegend = true;
-  public chartPlugins = [pluginAnnotations];
+  public chartPlugins = [];
   public drag = false;
 
   private emptyTooltipInfo: ITooltipInfo = {
@@ -75,10 +77,12 @@ export class BaseChartComponent implements OnInit, OnChanges {
   public constructor() {
     this.createDefaultColors();
     this.tooltipInfo = this.emptyTooltipInfo;
+    this.chartPlugins = [pluginAnnotations];
   }
 
   public ngOnInit(): void {
-
+    this.legendPosition = this.data.legendPosition ? this.data.legendPosition : this.legendPosition;
+    this.chartOptions.legend.position = this.legendPosition;
   }
 
   private createDefaultColors(): void {
