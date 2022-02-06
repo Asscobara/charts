@@ -5,7 +5,7 @@ environments:
     mode: pull-request
   - name: config
     branch: feature/flycode-configuration-7z006nn
-    mode: read
+    mode: pull-request
 apps:
   - name: chrt
     path: ""
