@@ -1,249 +1,619 @@
 {
-
-
-  "charts": [{
-    "type": "horizontalBar",
-    "display": true,
-    "id": 9,
-    "xXis": ["first", "second", "third", "fourth", "fifth", "sixth", "seventh"],
-    "dataSet": [{
-      "data": [1 , 33, 22, 44, 5, 43, 220],
-      "label": "test data set",
-      "radius": 50,
-      "rotation": 0,
-      "showLine": true,
-      "spanGaps": true,
-      "weight": 300,
-      "fill": true,
-      "barPercentage": 1,
-      "borderDash": [1, 2, 3, 42, 5]
-    }, {
-      "data": [12 , 323, 222, 424, 25, 423, 220],
-      "label": "test data set2",
-      "radius": 50,
-      "rotation": 0,
-      "showLine": true,
-      "spanGaps": false,
-      "weight": 300,
-      "fill": true,
-      "barPercentage": 1,
-      "borderDash": [1, 2, 3, 42, 5]
-    }]
-   },{
-    "type": "line",
-    "display": true,
-    "id": 10,
-    "xXis": ["first", "second", "third", "fourth", "fifth", "sixth", "seventh"],
-    "dataSet": [{
-      "fill": false,
-      "data": [1 , 33, 22, 44, 5, 43, 20],
-      "label": "line1"
-    }, {
-      "fill": false,
-      "data": [10 , 330, 220, 440, 44, 32, 100],
-      "label": "line2"
-    }, {
-      "fill": false,
-      "data": [13 , 133, 222, 344, 6, 32, 12, 90],
-      "label": "line3"
-    }, {
-      "fill": false,
-      "data": [130 , 1, 2, 44, 16, 232, 312, 190],
-      "label": "line4"
-    }, {
-      "fill": false,
-      "data": [65 , 64, 63, 64, 65, 66, 67, 68],
-      "label": "line5"
-    }, {
-      "fill": false,
-      "data": [100 , 200, 150, 300, 50, 120, 52, 666],
-      "label": "line6"
-    }]
-  }, {
-    "type": "pie",
-    "display": true,
-    "id": 11,
-    "xXis": ["first", "second", "third", "fourth"],
-    "dataSet": [{
-      "data": [1 , 33, 22, 44],
-      "label": "group 1"
-    }, {
-      "data": [10 , 330, 220, 440],
-      "label": "group 2"
-    }, {
-      "data": [13 , 133, 222, 344],
-      "label": "group 3"
-    }] }, {
-        "type": "radar",
-        "display": true,
-        "id": 12,
-        "xXis": ["time 1", "time 2", "time 3", "time 4", "time 5", "time 6", "time 7"],
-        "dataSet": [{
-          "data": [65, 59, 90, 81, 56, 55, 40],
-          "label": "Series A"
-        }, {
-          "data": [28, 48, 40, 19, 96, 27, 100],
-          "label": "Series B"
-        }, {
-          "data": [13 , 133, 33, 45, 233, 54, 66],
-          "label": "Series C"
-        }]
-    }, {
-    "type": "bar",
-    "display": true,
-    "id": 13,
-    "legendPosition": "top",
-    "xXis": ["first", "second"],
-    "dataSet": [{
-      "data": [12 , 33],
-      "label": "test1"
-    }, {
-      "data": [13 , 330],
-      "label": "test2"
-    }, {
-      "data": [17, 135],
-      "label": "test3"
-    }]
-  }, {
-    "type": "line",
-    "display": true,
-    "id": 14,
-    "legendPosition": "right",
-    "xXis": ["line 1", "line 2", "line 3", "line 4"],
-    "dataSet": [{
-      "fill": false,
-      "data": [1 , 33, 80, 144],
-      "label": "test1"
-    }, {
-      "fill": false,
-      "data": [10 , 330, 220, 440],
-      "label": "test2"
-    }, {
-      "fill": false,
-      "data": [13 , 133, 222, 344],
-      "label": "test3"
-    }]
-  },
+  "charts": [
     {
-      "type": "polarArea",
-      "display": true,
-      "id": 15,
-      "xXis": ["area 1", "area 2", "area 3", "area 4"],
-      "dataSet": [{
-        "data": [1 , 33, 22, 44],
-        "label": "test1"
-      }, {
-        "data": [10 , 330, 220, 440],
-        "label": "test2"
-      }, {
-        "data": [13 , 133, 222, 344],
-        "label": "test3"
-      }]
-    }, {
-      "type": "doughnut",
-      "display": true,
-      "id": 16,
-      "xXis": ["first", "second", "third", "fourth"],
-      "dataSet": [{
-        "data": [11 , 33, 22, 44],
-        "label": "test1"
-      }, {
-        "data": [101 , 330, 220, 440],
-        "label": "test2"
-      }, {
-        "data": [131 , 133, 222, 344],
-        "label": "test3"
-      }]
-    }, {
+      "dataSet": [
+        {
+          "barPercentage": "1",
+          "borderDash": [
+            "1",
+            "2",
+            "3",
+            "42",
+            "5"
+          ],
+          "data": [
+            "1",
+            "33",
+            "22",
+            "44",
+            "5",
+            "43",
+            "220"
+          ],
+          "fill": "true",
+          "label": "test data set",
+          "radius": "50",
+          "rotation": "0",
+          "showLine": "true",
+          "spanGaps": "true",
+          "weight": "300"
+        },
+        {
+          "barPercentage": "1",
+          "borderDash": [
+            "1",
+            "2",
+            "3",
+            "42",
+            "5"
+          ],
+          "data": [
+            "12",
+            "323",
+            "222",
+            "424",
+            "25",
+            "423",
+            "220"
+          ],
+          "fill": "true",
+          "label": "test data set2",
+          "radius": "50",
+          "rotation": "0",
+          "showLine": "true",
+          "spanGaps": "false",
+          "weight": "300"
+        }
+      ],
+      "display": "true",
+      "id": "9",
+      "type": "horizontalBar",
+      "xXis": [
+        "first",
+        "second",
+        "third",
+        "fourth",
+        "fifth",
+        "sixth",
+        "seventh"
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "1",
+            "33",
+            "22",
+            "44",
+            "5",
+            "43",
+            "20"
+          ],
+          "fill": "false",
+          "label": "line1"
+        },
+        {
+          "data": [
+            "10",
+            "330",
+            "220",
+            "440",
+            "44",
+            "32",
+            "100"
+          ],
+          "fill": "false",
+          "label": "line2"
+        },
+        {
+          "data": [
+            "13",
+            "133",
+            "222",
+            "344",
+            "6",
+            "32",
+            "12",
+            "90"
+          ],
+          "fill": "false",
+          "label": "line3"
+        },
+        {
+          "data": [
+            "130",
+            "1",
+            "2",
+            "44",
+            "16",
+            "232",
+            "312",
+            "190"
+          ],
+          "fill": "false",
+          "label": "line4"
+        },
+        {
+          "data": [
+            "65",
+            "64",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68"
+          ],
+          "fill": "false",
+          "label": "line5"
+        },
+        {
+          "data": [
+            "100",
+            "200",
+            "150",
+            "300",
+            "50",
+            "120",
+            "52",
+            "666"
+          ],
+          "fill": "false",
+          "label": "line6"
+        }
+      ],
+      "display": "true",
+      "id": "10",
       "type": "line",
-      "display": false,
-      "id": 17,
-      "xXis": [""],
-      "dataSet": [{
-        "fill": false,
-        "data": [1 , 33, 22, 44, 55, 33, 20],
-        "label": "321"
-      }]
-    },{
+      "xXis": [
+        "first",
+        "second",
+        "third",
+        "fourth",
+        "fifth",
+        "sixth",
+        "seventh"
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "1",
+            "33",
+            "22",
+            "44"
+          ],
+          "label": "group 1"
+        },
+        {
+          "data": [
+            "10",
+            "330",
+            "220",
+            "440"
+          ],
+          "label": "group 2"
+        },
+        {
+          "data": [
+            "13",
+            "133",
+            "222",
+            "344"
+          ],
+          "label": "group 3"
+        }
+      ],
+      "display": "true",
+      "id": "11",
+      "type": "pie",
+      "xXis": [
+        "first",
+        "second",
+        "third",
+        "fourth"
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "65",
+            "59",
+            "90",
+            "81",
+            "56",
+            "55",
+            "40"
+          ],
+          "label": "Series A"
+        },
+        {
+          "data": [
+            "28",
+            "48",
+            "40",
+            "19",
+            "96",
+            "27",
+            "100"
+          ],
+          "label": "Series B"
+        },
+        {
+          "data": [
+            "13",
+            "133",
+            "33",
+            "45",
+            "233",
+            "54",
+            "66"
+          ],
+          "label": "Series C"
+        }
+      ],
+      "display": "true",
+      "id": "12",
+      "type": "radar",
+      "xXis": [
+        "time 1",
+        "time 2",
+        "time 3",
+        "time 4",
+        "time 5",
+        "time 6",
+        "time 7"
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "12",
+            "33"
+          ],
+          "label": "test1"
+        },
+        {
+          "data": [
+            "13",
+            "330"
+          ],
+          "label": "test2"
+        },
+        {
+          "data": [
+            "17",
+            "135"
+          ],
+          "label": "test3"
+        }
+      ],
+      "display": "true",
+      "id": "13",
+      "legendPosition": "top",
       "type": "bar",
-      "display": false,
-      "id": 18,
-      "xXis": [""],
-      "dataSet": [{
-        "data": [55],
-        "label": "test1"
-      }]
-    }, {
+      "xXis": [
+        "first",
+        "second"
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "1",
+            "33",
+            "80",
+            "144"
+          ],
+          "fill": "false",
+          "label": "test1"
+        },
+        {
+          "data": [
+            "10",
+            "330",
+            "220",
+            "440"
+          ],
+          "fill": "false",
+          "label": "test2"
+        },
+        {
+          "data": [
+            "13",
+            "133",
+            "222",
+            "344"
+          ],
+          "fill": "false",
+          "label": "test3"
+        }
+      ],
+      "display": "true",
+      "id": "14",
+      "legendPosition": "right",
       "type": "line",
-      "display": false,
-      "id": 18,
-      "xXis": [""],
-      "dataSet": [{
-        "fill": false,
-        "data": [1 , 2, 3, 4, 5, 6, 7],
-        "label": "321"
-      }]
-    }, {
+      "xXis": [
+        "line 1",
+        "line 2",
+        "line 3",
+        "line 4"
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "1",
+            "33",
+            "22",
+            "44"
+          ],
+          "label": "test1"
+        },
+        {
+          "data": [
+            "10",
+            "330",
+            "220",
+            "440"
+          ],
+          "label": "test2"
+        },
+        {
+          "data": [
+            "13",
+            "133",
+            "222",
+            "344"
+          ],
+          "label": "test3"
+        }
+      ],
+      "display": "true",
+      "id": "15",
+      "type": "polarArea",
+      "xXis": [
+        "area 1",
+        "area 2",
+        "area 3",
+        "area 4"
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "11",
+            "33",
+            "22",
+            "44"
+          ],
+          "label": "test1"
+        },
+        {
+          "data": [
+            "101",
+            "330",
+            "220",
+            "440"
+          ],
+          "label": "test2"
+        },
+        {
+          "data": [
+            "131",
+            "133",
+            "222",
+            "344"
+          ],
+          "label": "test3"
+        }
+      ],
+      "display": "true",
+      "id": "16",
+      "type": "doughnut",
+      "xXis": [
+        "first",
+        "second",
+        "third",
+        "fourth"
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "1",
+            "33",
+            "22",
+            "44",
+            "55",
+            "33",
+            "20"
+          ],
+          "fill": "false",
+          "label": "321"
+        }
+      ],
+      "display": "false",
+      "id": "17",
       "type": "line",
-      "display": false,
-      "id": 19,
-      "xXis": [""],
-      "dataSet": [{
-        "fill": false,
-        "data": [121 , 133, 122, 144, 155, 3, 1],
-        "label": "id 19"
-      }]
-    }, {
+      "xXis": [
+        ""
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "55"
+          ],
+          "label": "test1"
+        }
+      ],
+      "display": "false",
+      "id": "18",
+      "type": "bar",
+      "xXis": [
+        ""
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "fill": "false",
+          "label": "321"
+        }
+      ],
+      "display": "false",
+      "id": "18",
       "type": "line",
-      "display": false,
-      "id": 20,
-      "xXis": [""],
-      "dataSet": [{
-        "fill": false,
-        "data": [4 , 55, 77, 3, 22, 11, 1],
-        "label": "321"
-      }]
-    }, {
+      "xXis": [
+        ""
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "121",
+            "133",
+            "122",
+            "144",
+            "155",
+            "3",
+            "1"
+          ],
+          "fill": "false",
+          "label": "id 19"
+        }
+      ],
+      "display": "false",
+      "id": "19",
       "type": "line",
-      "display": false,
-      "id": 21,
-      "xXis": [""],
-      "dataSet": [{
-        "fill": false,
-        "data": [10 , 3, 2, 4, 5, 50, 100],
-        "label": "321"
-      }]
-    }, {
+      "xXis": [
+        ""
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "4",
+            "55",
+            "77",
+            "3",
+            "22",
+            "11",
+            "1"
+          ],
+          "fill": "false",
+          "label": "321"
+        }
+      ],
+      "display": "false",
+      "id": "20",
       "type": "line",
-      "display": false,
-      "id": 22,
-      "xXis": [""],
-      "dataSet": [{
-        "fill": false,
-        "data": [2 , 4, 6, 8, 10, 12, 14],
-        "label": "321"
-      }]
-    }, {
+      "xXis": [
+        ""
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "10",
+            "3",
+            "2",
+            "4",
+            "5",
+            "50",
+            "100"
+          ],
+          "fill": "false",
+          "label": "321"
+        }
+      ],
+      "display": "false",
+      "id": "21",
       "type": "line",
-      "display": false,
-      "id": 23,
-      "xXis": [""],
-      "dataSet": [{
-        "fill": false,
-        "data": [23 , 22, 21, 20, 19, 18, 17],
-        "label": "321"
-      }]
-    }, {
+      "xXis": [
+        ""
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "fill": "false",
+          "label": "321"
+        }
+      ],
+      "display": "false",
+      "id": "22",
       "type": "line",
-      "display": false,
-      "id": 24,
-      "xXis": [""],
-      "dataSet": [{
-        "fill": false,
-        "data": [4 , 4, 4, 5, 5, 5, 4],
-        "label": "321"
-      }]
-    }]
+      "xXis": [
+        ""
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "23",
+            "22",
+            "21",
+            "20",
+            "19",
+            "18",
+            "17"
+          ],
+          "fill": "false",
+          "label": "321"
+        }
+      ],
+      "display": "false",
+      "id": "23",
+      "type": "line",
+      "xXis": [
+        ""
+      ]
+    },
+    {
+      "dataSet": [
+        {
+          "data": [
+            "4",
+            "4",
+            "4",
+            "5",
+            "5",
+            "5",
+            "4"
+          ],
+          "fill": "false",
+          "label": "321"
+        }
+      ],
+      "display": "false",
+      "id": "24",
+      "type": "line",
+      "xXis": [
+        ""
+      ]
+    }
+  ]
 }
-
-

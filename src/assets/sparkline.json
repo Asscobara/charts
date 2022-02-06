@@ -1,206 +1,563 @@
 {
   "sparkLines": {
-    "columns": ["test", "chart", "uploads", "used", "just text"],
-    "sparkLines": [{
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [1, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 18,
-      "chartColumnIndex": 1,
-      "data": [2, 1, 55, 99, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [3, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [4, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [5, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [6, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [7, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [8, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [9, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [10, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [11, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [12, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [13, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 2,
-      "data": [14, 1, 20, 30, "chart at col index 2"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [15, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [16, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [17, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [18, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [19, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [20, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [21, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [22, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [23, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [24, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [25, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [27, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [28, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [29, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 24,
-      "chartColumnIndex": 1,
-      "data": [30, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [31, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 23,
-      "chartColumnIndex": 1,
-      "data": [32, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 22,
-      "chartColumnIndex": 1,
-      "data": [33, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [34, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 21,
-      "chartColumnIndex": 1,
-      "data": [35, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [36, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 20,
-      "chartColumnIndex": 1,
-      "data": [37, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 19,
-      "chartColumnIndex": 1,
-      "data": [38, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 18,
-      "chartColumnIndex": 1,
-      "data": [39, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [40, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [41, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 24,
-      "chartColumnIndex": 1,
-      "data": [42, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 23,
-      "chartColumnIndex": 1,
-      "data": [43, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 22,
-      "chartColumnIndex": 1,
-      "data": [44, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [45, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 21,
-      "chartColumnIndex": 1,
-      "data": [46, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [47, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 20,
-      "chartColumnIndex": 1,
-      "data": [48, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 17,
-      "chartColumnIndex": 1,
-      "data": [49, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 19,
-      "chartColumnIndex": 1,
-      "data": [50, 1, 20, 30, "abc"]
-    }, {
-      "chartId": 18,
-      "chartColumnIndex": 1,
-      "data": [51, 1, 20, 30, "abc"]
-    }]
+    "columns": [
+      "test",
+      "chart",
+      "uploads",
+      "used",
+      "just text"
+    ],
+    "sparkLines": [
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "1",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "18",
+        "data": [
+          "2",
+          "1",
+          "55",
+          "99",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "3",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "4",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "5",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "6",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "7",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "8",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "9",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "10",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "11",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "12",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "13",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "2",
+        "chartId": "17",
+        "data": [
+          "14",
+          "1",
+          "20",
+          "30",
+          "chart at col index 2"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "15",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "16",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "17",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "18",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "19",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "20",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "21",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "22",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "23",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "24",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "25",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "27",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "28",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "29",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "24",
+        "data": [
+          "30",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "31",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "23",
+        "data": [
+          "32",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "22",
+        "data": [
+          "33",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "34",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "21",
+        "data": [
+          "35",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "36",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "20",
+        "data": [
+          "37",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "19",
+        "data": [
+          "38",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "18",
+        "data": [
+          "39",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "40",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "41",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "24",
+        "data": [
+          "42",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "23",
+        "data": [
+          "43",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "22",
+        "data": [
+          "44",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "45",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "21",
+        "data": [
+          "46",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "47",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "20",
+        "data": [
+          "48",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "17",
+        "data": [
+          "49",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "19",
+        "data": [
+          "50",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      },
+      {
+        "chartColumnIndex": "1",
+        "chartId": "18",
+        "data": [
+          "51",
+          "1",
+          "20",
+          "30",
+          "abc"
+        ]
+      }
+    ]
   }
 }
