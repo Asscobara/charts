@@ -1,7 +1,7 @@
 version: "0.1"
 environments:
-  - name: main
-    branch: main
+  - name: master
+    branch: master
     mode: pull-request
 apps:
   - name: chrt1
