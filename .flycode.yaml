@@ -2,10 +2,10 @@ version: "0.1"
 environments:
   - name: main
     branch: main
-    mode: read
+    mode: pull-request
 apps:
   - name: chrt221
     path: ""
     text-resources:
-      - path: src/assets/*.json
+      - path: src/assets/en-US.json
         format: nested-key-value
