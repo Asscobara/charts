@@ -4,7 +4,7 @@ environments:
     branch: master
     mode: pull-request
 apps:
-  - name: chrt1
+  - name: chrt22
     path: ""
     text-resources:
       - path: src/assets/*.json
