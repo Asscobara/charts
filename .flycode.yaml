@@ -1,6 +1,6 @@
 version: "0.1"
 environments:
-  - name: main
+  - name: main22
     branch: main
     mode: pull-request
   - name: config
