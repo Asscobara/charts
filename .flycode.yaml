@@ -7,5 +7,5 @@ apps:
   - name: chrt221
     path: ""
     text-resources:
-      - path: src/assets/en-US.json
+      - path: charts/src/assets/en-US.json
         format: nested-key-value
