@@ -9,3 +9,8 @@ apps:
     text-resources:
       - path: charts/src/assets/en-Us.json
         format: nested-key-value
+  - name: flyhl
+    path: ""
+    text-resources:
+      - path: src/assets/en-Us.json
+        format: nested-key-value
