@@ -4,8 +4,8 @@ environments:
     branch: main
     mode: pull-request
 apps:
-  - name: chrt221
+  - name: flyhl
     path: ""
     text-resources:
-      - path: charts/src/assets/en-US.json
+      - path: src/assets/en-Us.json
         format: nested-key-value
