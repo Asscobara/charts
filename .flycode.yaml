@@ -7,5 +7,5 @@ apps:
   - name: charts
     path: ""
     text-resources:
-      - path: charts/src/assets/en-Us.json
+      - path: src/assets/en-Us.json
         format: nested-key-value
