@@ -3,15 +3,9 @@ environments:
   - name: main
     branch: main
     mode: pull-request
-  - name: feature1
-    branch: feature/flycode-texts-1-rh006np
-    mode: pull-request
-  - name: feature2
-    branch: feature/flycode-configuration-7z006nn
-    mode: pull-request
 apps:
   - name: charts
     path: ""
     text-resources:
-      - path: src/assets/en-Us.json
-        format: nested-key-value
+      - path: src/locale/*.json
+        format: simple-value-value
