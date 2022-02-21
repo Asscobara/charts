@@ -4,7 +4,7 @@ environments:
     branch: main
     mode: pull-request
 apps:
-  - name: charts
+  - name: chartsApp
     path: ""
     text-resources:
       - path: src/locale/*.json
